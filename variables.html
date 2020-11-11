@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Code Adventure</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>Add Stats</h1>
+    <p>Within Twine, you can use coding structures such as variables and if statements, to make your story more like a game.</p>
+    <br>
+  </header>
+
+  <div id="set" class="left">
+    <h3>Step 1: Setting up a variable</h3>
+    <p>In this example, I am going to give my reader some lives - if they make the wrong choice they will lose a life and risk having to start their adventure again!</p>
+    <p>Firstly, we need to <strong>set</strong> the variable - give it a starting value.</p>
+    <p>Open the first paragraph of your story, and add this code.</p>
+    <pre>(set: $lives to 3)</pre>
+    <br>
+    <p>The reader now has 3 lives when they start the story.</p>
+    <br>
+  </div>
+
+  <div id="modify" class="left">
+    <h3>Step 2: Using the variable</h3>
+    <p>Now we need to create a situation where your character might lose a life.</p>
+    <p>At a relevant part of your story, create a branch that leads somewhere perilous, perhaps the character falls down a hole if they choose the wrong path.</p>
+    <p>Once you have written this new paragraph, add the following code.</p>
+    <pre>(set: $lives to $lives - 1)</pre>
+    <br>
+    <p>This will take one life away from your reader!</p>
+    <br>
+  </div>
+
+  <div id="if" class="left">
+    <h3>Step 3: Creating consequences</h3>
+    <p>What happens when your reader uses up all three of their lives?</p>
+    <p>After you have take a life away from your reader, you can check how many lives they have left, and make something happen if they have run out.</p>
+    <p>In the same paragraph as before, add this new code underneath the previous code.</p>
+    <pre>(if: $lives is > 0)[Phew, that was close... [[Continue]]]
+(else:)[Oh no... [[The End]]]</pre>
+    <br>
+    <p>Now, different things will happen depending on whether the reader has used up all their lives or not.</p>
+    <p>There are lots of brackets here now, so it's easy to miss some out - remember to close any bracket that you open.</p>
+    <br>
+    <p><strong>Test out this code</strong> and see if you can work out what is happening.</p>
+    <p>Then edit it to make it fit your story!</p>
+    <p>Do things one step at a time, and <strong>test your story</strong> every time you make a change.</p>
+    <p>What other ways could you use variables?</p>
+  </div>
+
+  <nav class="links bg_green">
+    <a href="index.html">Go Back</a>
+  </nav>
+
+  <footer class="links">
+    <a href="https://github.com/ScienceOxford/choose-your-own-adventure" target="_blank">View on GitHub</a>
+  </footer>
+
+  </body>
+  </html>
