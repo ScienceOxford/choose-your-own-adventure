@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Code Adventure</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>Code more complicated formatting</h1>
+    <p>So far, we have discussed adding colours and fonts to the whole project, or to passages or links. These instructions will help you to get up more control over what formatting to use.</p>
+    <br>
+  </header>
+
+  <div id="css" class="left">
+    <h3>Step 1: Edit the Stylesheet</h3>
+    <p>In this example, I am going to set up the formatting for a heading.</p>
+    <p>I want my heading to be larger than the rest of the writing, and be a different colour.</p>
+    <br>
+    <p>To change the formatting, you need to <strong>Edit Story Stylesheet</strong>, which can be found in the menu next to the story title on the bottom left.</p>
+    <p>Underneath any code you have already created, begin a new section like this:</p>
+    <pre>h1 {
+
+}</pre>
+    <br>
+    <p>This means Heading 1. You could also use <code>h2</code>, <code>h3</code> etc.</p>
+    <br>
+    <p><strong>Inside the curly brackets</strong>, add your code to change the colour (same as before), and the font size (new code!).</p>
+    <pre>h1 {
+  color: #249140;
+  font-size: 40px;
+}</pre>
+    <br>
+    <p>This will change the colour to dark green, and make it 40 pixels in size.</p>
+    <p>You can put anything you like in here but, to test it out, choose some code that you have used before!</p>
+    <br>
+  </div>
+
+  <div id="html" class="left">
+    <h3>Step 2: Use your new heading</h3>
+    <p>You have created a <code>h1</code> style, now you can choose what parts of your story you want to apply this style to.</p>
+    <p>Open a passage, and add a new line of text to the top, for example 'this is a test heading'.</p>
+    <p>At the start of your new line, add <code><strong>&lth1></strong></code>, and at the end add <code><strong>&lt/h1></strong></code>. Notice the backslash at the end!</p>
+    <pre>&lth1>this is a test heading&lt/h1></pre>
+    <br>
+    <p>Play your story and check your passage - did your new heading use the new formatting?</p>
+    <br>
+    <p><strong>Create different headings in your Stylesheet and use them in different parts of your story.</strong></p>
+    <ul>
+      <li>different characters could use different colours when they speak</li>
+      <li>you could make some paragraphs bigger for dramatic effect</li>
+    </ul>
+    <br>
+  </div>
+
+  <nav class="links bg_green">
+    <a href="index.html">Go Back</a>
+  </nav>
+
+  <footer class="links">
+    <a href="https://github.com/ScienceOxford/choose-your-own-adventure" target="_blank">View on GitHub</a>
+  </footer>
+
+  </body>
+  </html>
