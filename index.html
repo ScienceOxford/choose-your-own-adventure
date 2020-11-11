@@ -18,41 +18,113 @@
     <p>Resources for the 'Code Adventure' Creative Computing Club.</p>
     <p>During this workshop, you will write and program a 'Choose your own Adventure' style story using Twine.</p>
     <p>This page recaps what <a href="https://bit.ly/Nov20CCC" target="_blank">we discussed as a group</a>.</p>
+    <p>To jump to the section on changing colours, <a href="#colour">click here.</a></p>
     <p>To skip to the examples and ideas, <a href="#extensions">click here</a>.</p>
     <br>
   </div>
 
   <div id="starter" class="left">
     <h3>Getting started</h3>
-    <p>...</p>
+    <p>Visit: <a href="https://twinery.org/2/#!/stories" target="_blank">twinery.org/2</a></p>
+    <p>You should see a screen like the below picture. <em>If you get a welcome message first, click 'skip'.</em></p>
+    <img src=".\images\twine-dashboard.PNG" alt="Twine dashboard" width="1000px" height="auto">
+    <br>
+    <p>Click the <strong>+Story</strong> button on the right and type in a title, then click <strong>+Add</strong>.</p>
+    <img src=".\images\name-story.PNG" alt="add title" width="600px" height="auto">
+    <br>
+    <p>You should now see a screen like the below picture:</p>
+    <img src=".\images\editor.PNG" alt="story editor" width="1000px" height="auto">
     <br>
     <br>
   </div>
 
   <div id="story" class="left">
     <h3>Beginning your story</h3>
-    <p>...</p>
+    <p>Double click on the <strong>Untitled Passage</strong> - this will be the opening paragraph of your story!</p>
+    <p>Write a sentence to set the scene, then decide on a couple of options your reader can choose from.</p>
+    <p>Write your options in <strong>double square brackets</strong> <code>[[choice]]</code>, and new passages will be created and automatically linked to your first paragraph!</p>
+    <p>Click the <code><strong>x</strong></code> in the top right corner when you have finished editing the passage.</p>
+    <h4>Example:</h4>
+    <pre>You arrive at Science Oxford's Creative Computing Club workshop and notice that something isn't right...
+Instead of a laptop on each desk, there is a strange square box!
+[[Prod the box]]
+[[Go and look for help]]</pre>
+    <img src=".\images\first-passage.PNG" alt="story editor" width="600px" height="auto">
     <br>
+    <p>Now test your story!</p>
+    <img src=".\images\play-story.PNG" alt="> play" width="200px" height="auto">
+    <p>Click the <strong>> Play</strong> button on the bottom toolbar.</p>
+    <p>This should open your story in your web browser. Click on your options to test that they work.</p>
+    <p>Go back to the Twine editor, to carry on creating your story.</p>
+    <br>
+  </div>
+
+  <div id="saving" class="left">
+    <h3>Saving your story</h3>
+    <p><strong>To make sure that you do not lose your work, download your work regularly.</strong></p>
+    <p>Save your story to your computer, by clicking the menu next to the story title on the bottom left, then clicking <strong>Publish to File</strong>.</p>
+    <img src=".\images\publish-to-file.PNG" alt="publish to file screenshot" width="600px" height="auto">
+    <br>
+    <p>This will save it on your computer - possibly in your downloads folder.</p>
+    <p><strong>Do this any time you make significant changes!</strong></p>
     <br>
   </div>
 
   <div id="colours" class="left">
-    <h3>Changing colours & fonts</h3>
-    <p>...</p>
+    <h3>Changing colours</h3>
+    <p>To change the colours, and other formatting such as fonts, you need to <strong>Edit Story Stylesheet</strong>, which can be found in the menu next to the story title on the bottom left.</p>
+    <p>Anything you add in here will change the formatting for your story - add things one at time, close the stylesheet, then check your story using the <strong>Play</strong> button.</p>
+    <p><strong>If you make lots of changes at the same time, it can be very difficult to debug any problems!</strong></p>
     <br>
+    <h4>Example 1:</h4>
+    <pre>tw-story{
+  color: #fcba03;
+}</pre>
+    <br>
+    <p>The example code above will change the <strong>text colour</strong> of your story to a mustard yellow colour.</p>
+    <ul>
+      <li><strong><code>tw-story{}</code></strong> means 'Twine story'. Anything inside the curly brackets <code>{}</code> will apply to your whole story.</li>
+      <li><strong><code>color:</code></strong> means edit the text colour. Note the American spelling of 'color' with no u, and the colon <code>:</code> at the end.</li>
+      <li><strong><code>#fcba03;</code></strong> is the 'hex code' of my chosen colour. The semi-colon <code>;</code> at the end means that you have finished giving an instruction.</li>
+    </ul>
+    <p><a href="https://www.google.com/search?q=color+picker" target="_blank">Click here to find colour hex codes.</a></p>
+    <br>
+    <h4>Example 2:</h4>
+    <pre>tw-story{
+  background-color: #fcba03;
+}
+
+tw-passage{
+  color: #000000;
+}
+
+tw-link{
+  color: #249140;
+}</pre>
+    <br>
+    <p>The example code above will change the <strong>background colour</strong> of your story to a mustard yellow colour, the <strong>paragraph text</strong> to black, and the <strong>link text</strong> to dark green.</p>
+    <ul>
+      <li><strong><code>tw-story{}</code></strong> means 'Twine story'. Anything inside the curly brackets <code>{}</code> will apply to your whole story.</li>
+      <li><strong><code>tw-passage{}</code></strong> means 'Twine passage'. Anything inside the curly brackets <code>{}</code> will apply only to your paragraph text.</li>
+      <li><strong><code>tw-link{}</code></strong> means 'Twine link'. Anything inside the curly brackets <code>{}</code> will apply only to your links (your text inside double square brackets).</li>
+    </ul>
+    <p><a href="https://www.google.com/search?q=color+picker" target="_blank">Click here to find colour hex codes.</a></p>
     <br>
   </div>
 
   <div id="extensions" class="left">
     <h3>What next?</h3>
     <p>Continue to write your story with as many branches as you can think of!</p>
-    <p>The links below will help to code some extra features into your story.</p>
+    <p>The links below will help you to code some extra features into your story.</p>
   </div>
 
   <nav class="links bg_green">
-    <a href="" target="_blank">add a 'random' option</a>
-    <a href="" target="_blank">...</a>
-    <a href="" target="_blank">...</a>
+    <a href="" target="_blank">add pictures</a>
+    <a href="" target="_blank">add fonts</a>
+    <a href="" target="_blank">add shortcuts to formatting options</a>
+    <a href="" target="_blank">add random story choices</a>
+    <a href="" target="_blank">add stats (e.g health)</a>
+    <a href="" target="_blank">add character customisation options</a>
   </nav>
 
   <footer class="links">
