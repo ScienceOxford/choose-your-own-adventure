@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Code Adventure</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>Add Pictures to your Story</h1>
+    <p>These instructions show you how to add pictures into your project.</p>
+    <br>
+  </header>
+
+  <div id="find" class="left">
+    <h3>Permissions</h3>
+    <p>When choosing pictures, it is important to make sure that you have permission to use it, and it is always a good idea to thank whoever created it (if it does not belong to you), for example with a link to the website!</p>
+    <p>By using the link below to search for pictures, you will make sure that you only find images that are <strong>Copyright Free</strong>, so you have permission to use them for education purposes.</p>
+    <p><a href="https://search.kidzsearch.com/kzimagesearch-copyright-free.php?q=computer&aff=&subid=&oq=computer&v=desktop#gsc.tab=0&gsc.q=computer&gsc.page=1" target="_blank">Image Search</a></p>
+    <p>If you want to create a project to share online with people other than your family, you will need to be even more careful about how you choose your images.</p>
+    <p><strong>Remember, do not include any photos of yourself or anyone you know in your story, as you will be sharing it with the other club members during the workshop!</strong></p>
+    <br>
+  </div>
+
+  <div id="link" class="left">
+    <h3>Getting a link to your pictures</h3>
+    <p>You can create an image yourself, using software on your device, or save an image to your computer after <a href="https://search.kidzsearch.com/kzimagesearch-copyright-free.php?q=computer&aff=&subid=&oq=computer&v=desktop#gsc.tab=0&gsc.q=computer&gsc.page=1" target="_blank">searching online</a>.</p>
+    <p>Twine does not allow you to directly place images into your story - you need to link to it.</p>
+    <p>Visit <a href="https://imgbb.com/upload" target="_blank">imgbb</a> and upload your picture. Choose how long you want to keep the picture for (the maximum is 1 month), then click <strong>Upload</strong>.</p>
+    <img src=".\images\upload-image.PNG" alt="upload image screenshot" width="1000px" height="auto">
+    <p>Once the image has successfully uploaded (this might take a little while if it is a large picture!), change the <strong>Embed codes</strong> to <strong>HTML full linked</strong></p>
+    <img src=".\images\embed-image.PNG" alt="embed image screenshot" width="600px" height="auto">
+    <br>
+    <br>
+  </div>
+
+  <div id="add" class="left">
+    <h3>Using your picture in Twine</h3>
+    <p>Go back to Twine, and <strong>open the passage</strong> in which you want to put your picture.</p>
+    <p>Copy and paste the <strong>entire line</strong> of code from imgbb into the passage - if you put it below your text it will be placed afterwards.</p>
+    <br>
+    <h4>Example:</h4>
+    <pre>You arrive at Science Oxford's Creative Computing Club workshop and notice that something isn't right...
+Instead of a laptop on each desk, there is a strange square box!
+[[Prod the box]]
+[[Go and look for help]]
+
+&lta href="https://ibb.co/1s3Lpcn">&ltimg src="https://i.ibb.co/dbSr3Zc/blank-zoom-background.png" alt="blue rectangle" border="0">&lt/a></pre>
+    <br>
+    <p>The example code above adds an image of a blue rectange to the bottom of my story's first paragraph.</p>
+    <br>
+  </div>
+
+  <div id="add" class="left">
+    <h3>Changing your picture's size</h3>
+    <p>Once you have tested your story, to see what your picture looks like, you might want to change the size. You can do this by writing some extra code.</p>
+    <p>The line of code that imgbb gives you has a few different parts to it:</p>
+    <ul>
+      <li><strong><code>&lta...</code></strong> creates a <strong>hyperlink</strong> - if your reader clicks on the picture, it will open the picture in their web browser.</li>
+      <li><strong><code>&ltimg...</code></strong> begins the HTML instruction to display the image, and has more sections within it!</li>
+      <li><strong><code>src=...</code></strong> is the <strong>source</strong> of the image - where it is stored online.</li>
+      <li><strong><code>alt=...</code></strong> is the <strong>alternative text</strong> of the image - this will be displayed if the image is missing or cannot be displayed, and is used by screen-readers to describe the image to blind and partially sighted people. Write a good description of your image to help those who cannot see the picture to understand your story.</li>
+      <li><strong><code>border=...</code></strong> is the size of the border around the image (currently no border!).</li>
+    </ul>
+    <p>After <strong><code>border="0"</code></strong>, and before the closing bracket <strong><code>>&lt/a></code></strong>, you can add additional information to help display your image.</p>
+    <p>Try <code>width="200px" height="auto"</code> to set the width of the image to 200 pixels wide. Keeping height as auto, means that it will <strong>scale the image</strong> so that the height matches the width, and doesn't get squashed or stretched.</p>
+    <h4>Example:</h4>
+    <pre>&lta href="https://ibb.co/1s3Lpcn">&ltimg src="https://i.ibb.co/dbSr3Zc/blank-zoom-background.png" alt="blue rectangle" border="0" width="200px" height="auto">&lt/a></pre>
+    <br>
+  </div>
+
+  <nav class="links bg_green">
+    <a href="index.html">Go Back</a>
+  </nav>
+
+  <footer class="links">
+    <a href="https://github.com/ScienceOxford/choose-your-own-adventure" target="_blank">View on GitHub</a>
+  </footer>
+
+  </body>
+  </html>
