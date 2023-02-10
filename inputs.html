@@ -18,11 +18,9 @@
 
   <div id="set-up" class="left">
     <h3>Step 1: Creating a set-up passage.</h3>
-    <p>Asking your reader to input information pops up a box over your story - it does not work neatly within your paragraph.</p>
+    <p>Asking your reader to input information pops up a box over your story.</p>
     <img src=".\images\dialog-box.PNG" alt="example dialog box screenshot" width="600px" height="auto">
-    <p>To keep the flow of the story, you can start your story with a new passage, that asks your reader for their name before the story officially starts.</p>
-    <p>Click the <strong>+Passage</strong> button on the bottom left to create a new, unconnected, passage.</p>
-    <p>Copy and paste the below code into this passage, then close the passage.</p>
+    <p>Open your first passage, then copy and paste the below code at the top, before your story starts.</p>
     <pre>(set: $name to (prompt: "Hello, what is your name?", ""))
 Welcome to the story $name!</pre>
     <br>
@@ -33,30 +31,11 @@ Welcome to the story $name!</pre>
       <li>Uses the newly created variable in a sentence</li>
     </ul>
     <br>
-    <p><strong>Test out the code by hovering over the passage, and clicking the play button.</strong></p>
-    <img src=".\images\play-passage.PNG" alt="finding the play button on a passage screenshot" width="400px" height="auto">
-    <br>
-    <p>Edit the code so that it fits your story.</p>
+    <p>Test it out, then edit the code so that it fits your story.</p>
     <ul>
       <li>What do you want the pop up to say?</li>
       <li>What happens when you put something inside the blank speech marks <code>""</code> at the end of the first line?</li>
     </ul>
-    <br>
-  </div>
-
-  <div id="connecting" class="left">
-    <h3>Step 2: Connect this passage to your story</h3>
-    <p>Once you have finished writing your passage, you can connect it to the start of your story.</p>
-    <p>To do this, you need to know the <strong>title</strong> of your opening passage, in my example it is <code>Beginning</code>.</p>
-    <p>Instead of asking the reader to click on a box called <code>Beginning</code>, I am going to call my link something else, but <strong>point it</strong> to the correct passage.</p>
-    <pre>[[Start your Adventure ->Beginning]]</pre>
-    <br>
-    <p>Add the code to your passage, and edit it so that <code>Beginning</code> is the title of <strong>your</strong> first passage.</p>
-    <p>Check that your set-up passage now has an arrow linking it to your story.</p>
-    <br>
-    <p>Finally, you need to change the official start of your story to your new set-up passage.</p>
-    <p>Hover over the passage, and click the three dots <code>...</code> to access the menu. Click <strong>Start Story Here</strong>. The green rocket will now be on the top left corner of the passage.</p>
-    <img src=".\images\start-story-here.PNG" alt="start story here option screenshot" width="400px" height="auto">
     <br>
     <p><strong>If you have asked your reader for their name, you should use it in your story! Look through all of your paragraphs, and add <code>$name</code> to put their name into the text.</strong></p>
     <p>What other questions could you ask your reader? How will you use this information throughout your story?</p>

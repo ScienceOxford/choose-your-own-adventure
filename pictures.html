@@ -28,10 +28,14 @@
 
   <div id="link" class="left">
     <h3>Getting a link to your pictures</h3>
-    <p>You can create an image yourself, using software on your device, or save an image to your computer after <a href="https://search.kidzsearch.com/kzimagesearch-copyright-free.php?q=computer&aff=&subid=&oq=computer&v=desktop#gsc.tab=0&gsc.q=computer&gsc.page=1" target="_blank">searching online</a>.</p>
     <p>Twine does not allow you to directly place images into your story - you need to link to it.</p>
-    <p>Visit <a href="https://imgbb.com/upload" target="_blank">imgbb</a> and upload your picture. Choose how long you want to keep the picture for (the maximum is 1 month), then click <strong>Upload</strong>.</p>
-    <img src=".\images\upload-image.PNG" alt="upload image screenshot" width="1000px" height="auto">
+    <p>Find a picture you like by <a href="https://search.kidzsearch.com/kzimagesearch-copyright-free.php?q=computer&aff=&subid=&oq=computer&v=desktop#gsc.tab=0&gsc.q=computer&gsc.page=1" target="_blank">searching online</a>.</p>
+    <p><strong>Right-click on that image and select 'Copy image address'.</strong></p>
+    <img src=".\images\copy-image-address.PNG" alt="upload image screenshot" width="1000px" height="auto">
+    <br>
+    <p>Visit <a href="https://imgbb.com/upload" target="_blank">imgbb</a> and click <strong>Add image URLs</strong>.</p>
+    <img src=".\images\add-image-urls.PNG" alt="upload image screenshot" width="1000px" height="auto">
+    <p>Paste the image link into the box that pops up, then click <strong>Upload</strong>.</p>
     <p>Once the image has successfully uploaded (this might take a little while if it is a large picture!), change the <strong>Embed codes</strong> to <strong>HTML full linked</strong></p>
     <img src=".\images\embed-image.PNG" alt="embed image screenshot" width="600px" height="auto">
     <br>
@@ -49,9 +53,10 @@ Instead of a laptop on each desk, there is a strange square box!
 [[Prod the box]]
 [[Go and look for help]]
 
-&lta href="https://ibb.co/1s3Lpcn">&ltimg src="https://i.ibb.co/dbSr3Zc/blank-zoom-background.png" alt="blue rectangle" border="0">&lt/a></pre>
+
+&lta href="https://imgbb.com/">&ltimg src="https://i.ibb.co/rb0dcQ2/images-q-tbn-ANd9-Gc-Tx88-VEZt-KVd0r-Pi5-MXs-AH5-Do-C71-R99m-NBUYLVwk8p-GVsw6-Rc-s.png" alt="images-q-tbn-ANd9-Gc-Tx88-VEZt-KVd0r-Pi5-MXs-AH5-Do-C71-R99m-NBUYLVwk8p-GVsw6-Rc-s" border="0">&lt/a></pre>
     <br>
-    <p>The example code above adds an image of a blue rectange to the bottom of my story's first paragraph.</p>
+    <p>The example code above adds an image of a computer to the bottom of my story's first paragraph.</p>
     <br>
   </div>
 
@@ -67,9 +72,12 @@ Instead of a laptop on each desk, there is a strange square box!
       <li><strong><code>border=...</code></strong> is the size of the border around the image (currently no border!).</li>
     </ul>
     <p>After <strong><code>border="0"</code></strong>, and before the closing bracket <strong><code>>&lt/a></code></strong>, you can add additional information to help display your image.</p>
+    <br>
+    <p class="debugging">There might be extra code at the end, which starts with <strong>&ltbr></strong> - you can delete this part.</p>
+    <br>
     <p>Try <code>width="200px" height="auto"</code> to set the width of the image to 200 pixels wide. Keeping height as auto, means that it will <strong>scale the image</strong> so that the height matches the width, and doesn't get squashed or stretched.</p>
     <h4>Example:</h4>
-    <pre>&lta href="https://ibb.co/1s3Lpcn">&ltimg src="https://i.ibb.co/dbSr3Zc/blank-zoom-background.png" alt="blue rectangle" border="0" width="200px" height="auto">&lt/a></pre>
+    <pre>&lta href="https://imgbb.com/">&ltimg src="https://i.ibb.co/rb0dcQ2/images-q-tbn-ANd9-Gc-Tx88-VEZt-KVd0r-Pi5-MXs-AH5-Do-C71-R99m-NBUYLVwk8p-GVsw6-Rc-s.png" alt="images-q-tbn-ANd9-Gc-Tx88-VEZt-KVd0r-Pi5-MXs-AH5-Do-C71-R99m-NBUYLVwk8p-GVsw6-Rc-s" border="0" width="200px" height="auto">&lt/a></pre>
     <br>
   </div>
 
